@@ -17,10 +17,7 @@ def length_of_last_word(s):
     >>> length_of_last_word("   what if we end with spaces   ")
     6
     """
-    length = 0
-    for i in s.strip():
-        if i == " ":
-            length = 0
-        else:
-            length += 1
-    return length
+    try:
+        return len(s.strip().split()[-1])
+    except IndexError:
+        return 0
