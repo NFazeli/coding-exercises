@@ -19,11 +19,11 @@ def length_of_last_word(s):
     6
     """
     length = 0
-    lastword = 0
+    last_word = 0
     for i in s:
         if i == " ":
             length = 0
         else:
             length += 1
-            lastword = length
-    return lastword
+            last_word = length
+    return last_word
