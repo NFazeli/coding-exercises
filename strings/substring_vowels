@@ -1,0 +1,13 @@
+# Find the mod of substrings in s 10003
+# s can contain special characters
+
+def substring(s):
+    """
+    >>> substring("a")
+    ['a']
+    >>> substring('Abcdefg143ij')
+    ['Abcd', 'efg143', 'ij']
+    """
+    out1 = ''.join(i if i in 'AEIOUaeiou' else ' ' for i in s).split()
+
+    return out1

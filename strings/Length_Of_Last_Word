@@ -19,9 +19,11 @@ def length_of_last_word(s):
     6
     """
     length = 0
-    for i in s.strip():
+    lastword = 0
+    for i in s:
         if i == " ":
             length = 0
         else:
             length += 1
-    return length
+            lastword = length
+    return lastword
