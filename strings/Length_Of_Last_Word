@@ -8,7 +8,8 @@
 
 def length_of_last_word(s):
     """
-    >>> length_of_last_word()
-    0
+    >>> length_of_last_word("Hello")
+    5
     """
-    return 0
+    a = len(s)
+    return a
