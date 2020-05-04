@@ -1,5 +1,7 @@
 def hanoi_tower(n, source, helper, destination):
     """
+    print a solution for Tower of Hanoi with n beats
+
     >>> hanoi_tower(1, 'A', 'B', 'C')
     move 1 from A to C
     >>> hanoi_tower(2, 'A', 'B', 'C')
